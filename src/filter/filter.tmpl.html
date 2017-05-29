@@ -1,0 +1,8 @@
+{{caption}}
+<select (change)="handleChange()" [(ngModel)]="selected">
+    <option
+        *ngFor="let item of values"
+        [selected]="item === selected">
+            {{item}}
+    </option>
+</select>
