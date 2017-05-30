@@ -16,9 +16,9 @@ export class Filter {
     values: String[] = ['']
 
     @Output()
-    change: EventEmitter<String> = new EventEmitter<String>()
+    onChange: EventEmitter<String> = new EventEmitter<String>()
 
-    handleChange() {
-        this.change.emit(this.selected)
+    handleChange(event) {
+        this.onChange.emit(this.selected)
     }
 }

@@ -1,5 +1,5 @@
 {{caption}}
-<select (change)="handleChange()" [(ngModel)]="selected">
+<select (change)="handleChange(selected)" [(ngModel)]="selected">
     <option
         *ngFor="let item of values"
         [selected]="item === selected">
